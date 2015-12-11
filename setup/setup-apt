@@ -9,7 +9,7 @@ sudo apt-get install autojump
 
 git clone --depth 1 https://github.com/clvv/fasd.git ~/.fasd
 cd ~/.fasd
-make install
+sudo make install
 
 sudo apt-get install python-pip python-dev
 sudo pip install thefuck
