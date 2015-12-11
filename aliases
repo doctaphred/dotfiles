@@ -15,10 +15,13 @@ alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
-alias rezc="source ~/.zshrc"
+alias rezc="zgen reset && source ~/.zshrc"
 alias zc="subl ~/.zshrc"
 
 alias sf='fasd -e subl'
+
+alias gs='git status'
+alias gsh='git show'
 
 
 # Include custom aliases
