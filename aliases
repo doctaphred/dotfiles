@@ -22,6 +22,8 @@ alias sf='fasd -e subl'
 
 alias gs='git status'
 alias gsh='git show'
+alias gl='git log'
+alias gdc='git diff --cached'
 
 
 # Include custom aliases
