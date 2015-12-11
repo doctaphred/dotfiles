@@ -1,3 +1,27 @@
+ZGEN_RESET_ON_CHANGE=(${HOME}/.zshrc)
+
+source "${HOME}/.zgen/zgen/zgen.zsh"
+
+# Check for .zgen/init.zsh
+if ! zgen saved; then
+    echo "Loading zgen plugins"
+
+    zgen oh-my-zsh
+    zgen oh-my-zsh plugins/autojump
+    zgen oh-my-zsh plugins/fasd
+    zgen oh-my-zsh plugins/thefuck
+
+    zgen load zsh-users/zsh-syntax-highlighting
+    zgen load zsh-users/zsh-completions src
+
+    # Custom prompt
+    # zgen oh-my-zsh themes/robbyrussell
+    zgen load bhilburn/powerlevel9k powerlevel9k
+
+    echo "Creating a zgen save"
+    zgen save
+fi
+
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
