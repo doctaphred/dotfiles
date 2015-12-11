@@ -5,7 +5,11 @@ sudo apt-get install zsh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-sudo apt-get install autojump fasd
+sudo apt-get install autojump
+
+git clone --depth 1 https://github.com/clvv/fasd.git ~/.fasd
+cd ~/.fasd
+make install
 
 sudo apt-get install python-pip python-dev
 sudo pip install thefuck
