@@ -1,0 +1,9 @@
+#!/bin/sh
+
+chsh -s $(which zsh)
+
+mkdir ~/.zgen
+cd ~/.zgen
+git clone git@github.com:tarjoilija/zgen.git
+
+env RCRC=$HOME/dotfiles/rcrc rcup

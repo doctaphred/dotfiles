@@ -1,0 +1,6 @@
+#!/bin/sh
+
+brew install zsh fzf autojump fasd thefuck
+
+brew tap thoughtbot/formulae
+brew install rcm

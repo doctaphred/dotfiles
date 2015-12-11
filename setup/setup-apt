@@ -1,0 +1,15 @@
+#!/bin/sh
+
+sudo apt-get install zsh
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+sudo apt-get install autojump fasd
+
+sudo apt-get install python-pip python-dev
+sudo pip install thefuck
+
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt-get update
+sudo apt-get install rcm
