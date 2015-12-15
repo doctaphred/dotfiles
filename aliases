@@ -20,11 +20,15 @@ alias zc="subl ~/.zshrc"
 
 alias sf='fasd -e subl'
 
+# git
 alias gs='git status'
 alias gsh='git show'
 alias gl='git log'
 alias gdc='git diff --cached'
 
+
+# tmux
+alias t='tmux attach-session -t'
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
