@@ -26,6 +26,7 @@ alias gsh='git show'
 alias gl='git log'
 alias gdc='git diff --cached'
 
+alias ackbar='afplay ~/Dropbox/etc/ackbar.mp3'
 
 # tmux
 alias t='tmux attach-session -t'
