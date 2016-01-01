@@ -16,6 +16,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/fasd
     zgen oh-my-zsh plugins/thefuck
+    zgen oh-my-zsh plugins/virtualenv
 
     zgen load zsh-users/zsh-syntax-highlighting
     zgen load zsh-users/zsh-completions src
@@ -68,6 +69,9 @@ _load_settings() {
   fi
 }
 _load_settings "$HOME/.zsh/configs"
+
+# vex completions
+eval "$(vex --shell-config zsh)"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
