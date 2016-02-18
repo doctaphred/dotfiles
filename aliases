@@ -27,6 +27,10 @@ alias gs='git status'
 alias gsh='git show'
 alias gl='git log'
 alias gdc='git diff --cached'
+alias gch='git checkout'
+alias gc='git commit -v'
+alias gau='git add --update'
+alias gu='git add --update'
 
 alias ackbar='afplay ~/Dropbox/etc/ackbar.mp3'
 
